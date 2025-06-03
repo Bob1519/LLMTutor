@@ -1,2 +1,2 @@
 # LLMTutor
-A basic project for a tutor
+A project for a AI tutor
