@@ -1,24 +1,37 @@
-from google import genai
 import os
 from dotenv import load_dotenv
-
 import streamlit as st
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import google.generativeai as genai
 
+# Load API key
 load_dotenv()
+GEMINI_KEY = 'AIzaSyDnp6hmKk1OWSTdOtOnOugpPeQ1OhAS7aM'
+genai.configure(api_key=GEMINI_KEY)
+model = genai.GenerativeModel("gemini-1.5-flash")
 
+docs = [
+    'The mitochondria is the powerhouse of the cell.',
+    'Georgia Tech is a leading research university in Atlanta.',
+    'RAG combines document retrieval with language models for better factual accuracy.'
+]
 
-GEMINI_KEY = os.getenv("GEMINI_KEY")
+vectorizer = TfidfVectorizer()
+doc_vectors = vectorizer.fit_transform(docs)
 
-client = genai.Client(api_key=GEMINI_KEY)
+st.title("Simple RAG with Gemini")
+user_query = st.text_input("Input your question:")
 
-# 4. Streamlit UI
-ai_prompt = st.text_input("Input your question:")
-if ai_prompt:
-    response = client.models.generate_content(
-        model="gemini-2.0-flash",
-        contents=[ai_prompt]
-    )
-    # Display prompt and AI answer
-    styled_prompt = f"<p style='font-size:40px;'><b>{ai_prompt}</b></p>"
-    st.markdown(styled_prompt, unsafe_allow_html=True)
+if user_query:
+    query_vector = vectorizer.transform([user_query])
+    sims = cosine_similarity(query_vector, doc_vectors).flatten()
+    top_k = sims.argsort()[-2:][::-1]  # top 2 docs
+    context = "\n".join([docs[i] for i in top_k])
+
+    prompt = f"Given the following context as a baseline, answer the following question. You can add any previous knowledge about the subject, but use the provided context as the initial context:\n{context}\n\nQuestion: {user_query}"
+    response = model.generate_content(prompt)
+
+    st.markdown(f"**Context Used:**\n{context}")
+    st.markdown("**Gemini Response:**")
     st.markdown(response.text)
