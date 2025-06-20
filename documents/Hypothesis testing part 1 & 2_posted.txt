@@ -1,0 +1,93 @@
+ 
+ISyE 3030
+Basic Statistical Methods
+
+Hypothesis Testing Part 1 & 2 
+ 
+Instructor:  Professor Jing Li
+H. Milton Stewart School of
+ Industrial and Systems Engineering
+Georgia Tech
+
+
+Statistical Hypothesis
+In statistics, a hypothesis is a statement about the parameter of a population. 
+Example: An aircrew escape system, commonly known as an ejection seat, is designed to rapidly eject pilots from an aircraft in emergencies. It relies on a solid propellant housed within the rocket motor to provide the necessary thrust for quick ejection. The system's safety and effectiveness depend on the propellant's mean burning rate, which must be exactly 50 cm/s. Any deviation from this rate, either too slow or too fast, can endanger the crew by compromising the ejection process.
+Statistical Hypothesis
+In statistics, a hypothesis is a statement about the parameter of a population. 
+Example: An aircrew escape system, commonly known as an ejection seat, is designed to rapidly eject pilots from an aircraft in emergencies. It relies on a solid propellant housed within the rocket motor to provide the necessary thrust for quick ejection. The system's safety and effectiveness depend on the propellant's mean burning rate, which must be exactly 50 cm/s. Any deviation from this rate, either too slow or too fast, can endanger the crew by compromising the ejection process.
+Recall: point estimation and CI
+Population: propellants of aircrew escape systems 
+X: burning rate of a propellent
+The first step of any statistical estimation is to take a sample from the population
+Sample of size 10 
+Point estimation
+L
+
+
+U
+Hypothesis Testing
+Population: propellants of aircrew escape systems 
+X: burning rate of a propellent
+Null hypothesis
+Alternative hypothesis
+
+Sample of size 10 
+
+The key for hypothesis testing is to decide the rejection rule. 
+Hypothesis Testing
+Null hypothesis
+Alternative hypothesis
+
+Sample of size 10 
+
+The key for hypothesis testing is to decide the rejection rule. 
+Critical values
+
+
+
+
+We will talk about how to decide critical values later.  
+Errors in Hypothesis Testing
+Null hypothesis
+Alternative hypothesis
+
+Sample of size 10 
+
+
+
+
+
+Truth 
+Decision 
+
+Type I error 
+Type II error 
+No error
+No error
+Why are there errors in hypothesis testing?
+Sample 
+Sample 
+Sample 
+Sample 
+Sample 
+Sample 
+Population 
+
+Errors in Hypothesis Testing: formal definitions
+
+In the legal system, a courtroom decision involves determining whether a defendant is guilty or not guilty of a crime. The decision is based on the evidence presented during the trial. However, errors can occur in the judgment process.
+Court room decision
+Truth 
+Decision 
+Not guilty
+
+Error of false conviction 
+Error of false acquittal
+No error
+No error
+Guilty
+Decision is made based on evidence presented during the trial, just like a sample used to make decision in hypothesis testing. The evidence is a subset of all possible information related to the case (population). 
+Example
+Example
+13

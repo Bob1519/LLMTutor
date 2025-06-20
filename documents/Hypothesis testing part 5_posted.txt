@@ -1,0 +1,74 @@
+ 
+ISyE 3030
+Basic Statistical Methods
+
+Hypothesis Testing Part 5
+ 
+Instructor:  Professor Jing Li
+H. Milton Stewart School of
+ Industrial and Systems Engineering
+Georgia Tech
+
+
+Two populations
+Recall: Hypothesis Testing Procedures
+Two Populations
+Population 1: people in city A
+Population 2: people in city B
+X: height of a person in city A
+Y: height of a person in city B
+
+Alternative hypothesis
+
+
+Hypothesis Testing on the Difference in Means of Two Normal Distributions (known variances)
+Test Statistic
+Null Hypothesis
+Distribution under H0
+Critical values
+
+Example
+
+
+Two Populations
+Population 1: people in city A
+Population 2: people in city B
+X: height of a person in city A
+Y: height of a person in city B
+
+Alternative hypothesis
+
+Hypothesis testing on the Difference in Means of Two Normal Distributions (unknown and equal variances)
+Test Statistic
+Null Hypothesis
+Distribution under H0
+Example
+Example
+Comparing by descriptive statistics
+Two Populations
+Population 1: people in city A
+Population 2: people in city B
+X: height of a person in city A
+Y: height of a person in city B
+
+Alternative hypothesis
+
+Hypothesis testing on the Variances of Two Normal Populations
+Test Statistic
+Null Hypothesis
+Distribution under H0
+Example
+Two Populations
+Population 1: people in city A
+Population 2: people in city B
+X: a person living in the north (X=0) or south (X=1) of city A
+Y: a person living in the north (Y=0) or south (Y=1) of city B
+
+Alternative hypothesis
+
+Hypothesis testing on the difference of two population proportions
+
+
+Hypothesis testing on the difference of two population proportions
+
+Example

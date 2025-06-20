@@ -1,0 +1,91 @@
+ISyE 3030 Basic Statistical Methods
+Practice Exam 2
+Spring 2025
+Name: _____________________________________________________
+GTID: ______________________________________________________
+Honor Code Certification:
+I have neither given nor received aid on this examination, nor have I concealed any violation of
+the Academic Honor Code.
+Signature, Date: _______________________________________________
+General Instructions:
+Exam duration: 75 minutes
+25 points total (1.2 point per question and 20 questions in total. You get 1 point for free!)
+All exam questions are multiple-choices questions: select the answer that is the best in each
+question (no partial credit will be given). You do not have to show calculation procedures.
+Questions with multiple answers marked or answers that are not clearly marked will receive
+no credit.
+1. When is a one-sided confidence interval most appropriate?
+• A. When estimating a parameter’s exact value.
+• B. When only an upper or lower bound of a parameter is needed.
+• C. When the variance of the population is unknown.
+• D. When comparing two population means.
+2. In the context of constructing confidence intervals, which of the following factors will decrease
+the width of a confidence interval for the mean (assuming the variance is known), considering other
+factors fixed?
+• A. Increasing the sample mean.
+• B. Decreasing the confidence level (e.g., from 99% to 95%).
+• C. Increasing the population variance.
+• D. Decreasing the sample size.
+3. Which of the following best describes the Method of Moments?
+• A. It minimizes the sum of squared differences between observed and predicted values.
+• B. It equates sample moments to population moments to estimate parameters.
+• C. It maximizes the likelihood of observed data under the model.
+4.
+5.  
+6.
+7.
+8. A study finds that 50% of a sample of 100 patients recovered from an illness within 10 days. What
+is the 95% one-sided upper bound for the true proportion of recovery?
+9.
+10.
+A random sample of 25 students' test scores has a sample mean of 75 and a sample standard
+deviation of 10. Construct a 95% one-sided lower bound for the population mean score.
+11.
+12.
+13.
+14.
+15.
+16.
+Which of the following statements regarding hypothesis testing is false?
+a. A type I error occurs when the null hypothesis is rejected when it is actually true.
+b. A type II error occurs when we fail to reject the null hypothesis when it is actually false.
+C. The power of a hypothesis test is the probability of not rejecting the null hypothesis when
+it is actually true.
+17. In a study of 20 college students, the average number of hours per week spent on
+extracurricular activities was 6.2 with a sample standard deviation of 2.1 hours. Is there
+sufficient evidence to suggest that the average number of hours spent on extracurricular
+activities is significantly greater than 6 hours per week? What is an appropriate
+hypothesis for this question?
+a. 6
+b. 𝐻𝐻0:𝜇𝜇 = 6 𝐻𝐻1:𝜇𝜇 < 6
+c. 𝐻𝐻0:𝜇𝜇 = 6 𝐻𝐻1:𝜇𝜇 > 6
+d. 𝐻𝐻0:𝜇𝜇 ≥ 6 𝐻𝐻1:𝜇𝜇 < 6
+e. N𝐻𝐻o 0 n:𝜇𝜇e o=f the𝐻𝐻 a 1 b:o𝜇𝜇ve≠ is6 correct.
+18. Continued from the above question, what is the appropriate test statistic to test the
+above hypothesis?
+a.
+6.2−6
+b. 2.1/20
+6.2−6
+2
+c.
+(2.1) /√2 0
+2
+(6.2−6)
+d. 2.1/√20
+6.2−6
+2.1/√20
+19. Continued from the above question, denote the test statistic in the above question by
+, which of the following inequalities must hold in order to reject H0 at significance level
+=0.01?
+𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡_𝑡𝑡𝑡𝑡𝑠𝑠𝑡𝑡
+𝛼𝛼
+a.
+b. |𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡_𝑡𝑡𝑡𝑡𝑠𝑠𝑡𝑡| > 𝑧𝑧0.0 05
+c. 𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡_𝑡𝑡𝑡𝑡𝑠𝑠𝑡𝑡 > 𝑧𝑧0.01
+d. |𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡_𝑡𝑡𝑡𝑡𝑠𝑠𝑡𝑡| > 𝑡𝑡0.005,1 9
+e. 𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡_𝑡𝑡𝑡𝑡𝑠𝑠𝑡𝑡 > 𝑡𝑡0.005,19
+𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡_𝑡𝑡𝑡𝑡𝑠𝑠𝑡𝑡 > 𝑡𝑡0.01,19
+20.
+> <
+Solutions

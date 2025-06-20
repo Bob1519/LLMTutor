@@ -1,0 +1,124 @@
+ 
+ISyE 3030
+Basic Statistical Methods
+
+Advanced Regression Methods
+ 
+Instructor:  Professor Jing Li
+H. Milton Stewart School of
+Industrial and Systems Engineering
+Georgia Tech
+
+
+Regression Methods beyond Simple Linear Regression
+Recap: Simple linear regression uses a single predictor X to predict the response variable Y. 
+
+
+Hours of study per day, X 
+Exam score, Y
+Regression Methods beyond Simple Linear Regression
+Real-world complexity: 
+One predictor is not enough 
+
+
+
+
+Multiple Linear Regression
+Regression Methods beyond Simple Linear Regression
+Real-world complexity: 
+Relationship between Y and X is non-linear
+
+
+
+
+
+Polynomial Regression
+Regression Methods beyond Simple Linear Regression
+Real-world complexity: 
+Y is not continuous
+
+
+
+
+
+Logistic Regression (Y is binary), Poisson Regression (Y is counts), etc. 
+
+Regression Methods beyond Simple Linear Regression
+Real-world complexity: 
+One predictor is not enough 
+Relationship between Y and X is non-linear
+Y is not continuous 
+
+
+
+
+Multiple Linear Regression
+
+Polynomial regression
+
+Logistic regression, Poisson regression, etc
+Multiple Linear Regression
+Simple linear regression: one predictor X
+Multiple linear regression: multiple predictors X1, X2, Xk
+
+
+
+
+
+
+Question: how to estimate regression coefficients  ?
+
+
+Sum of the squares of the errors
+
+Minimize
+The solutions are the least square estimates of the regression coefficients, denoted by  
+Example
+
+Example: Data
+Scatter plot
+Example
+import numpy as np
+import pandas as pd
+import statsmodels.api as sm
+# Data from the table
+data = {
+"y": [9.95, 24.45, 31.75, 35.00, 25.02, 16.86, 14.38, 9.60, 24.35, 27.50, 17.08, 37.00, 41.95, 11.66, 21.65, 17.89, 69.00, 10.30, 34.93, 46.59, 44.88, 54.12, 56.63, 22.13, 21.15],
+"x1": [2, 8, 11, 10, 8, 4, 2, 2, 9, 8, 4, 11, 12, 2, 4, 4, 20, 1, 10, 15, 15, 16, 17, 6, 5],
+"x2": [50, 110, 120, 550, 295, 200, 375, 52, 100, 300, 412, 400, 500, 360, 205, 400, 600, 585, 540, 250, 290, 510, 590, 100, 400]
+}
+df = pd.DataFrame(data)
+# Fit the regression model to get LSE estimates 
+X, y = df[["x1", "x2"]], df["y"]
+X = sm.add_constant(X)  # Add a column of ones for the intercept term
+model = sm.OLS(y, X).fit()
+b0, b1, b2 = model.params
+
+# Predict wire bond strength for x1=2 and x2=50
+x_new = np.array(np.array([1, 2, 50]))
+predicted_y = model.predict(x_new) # Including 1 for the intercept
+Python code
+Example
+library(stats)
+
+# Data from the table
+data <- data.frame(
+  y = c(9.95, 24.45, 31.75, 35.00, 25.02, 16.86, 14.38, 9.60, 24.35, 27.50, 17.08, 37.00, 41.95, 11.66, 21.65, 17.89, 69.00, 10.30, 34.93, 46.59, 44.88, 54.12, 56.63, 22.13, 21.15),
+  x1 = c(2, 8, 11, 10, 8, 4, 2, 2, 9, 8, 4, 11, 12, 2, 4, 4, 20, 1, 10, 15, 15, 16, 17, 6, 5),
+  x2 = c(50, 110, 120, 550, 295, 200, 375, 52, 100, 300, 412, 400, 500, 360, 205, 400, 600, 585, 540, 250, 290, 510, 590, 100, 400)
+)
+
+# Fit the linear regression model
+model <- lm(y ~ x1 + x2, data = data)
+
+# Display regression coefficients
+coefficients <- coef(model)
+b0 <- coefficients["(Intercept)"]
+b1 <- coefficients["x1"]
+b2 <- coefficients["x2"]
+
+# Predict pull strength for x1 = 2, x2 = 50
+x1_new <- 2
+x2_new <- 50
+predicted_y <- b0 + b1 * x1_new + b2 * x2_new
+R code

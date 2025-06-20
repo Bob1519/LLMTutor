@@ -1,0 +1,77 @@
+ 
+ISyE 3030
+Basic Statistical Methods
+
+Hypothesis Testing part 3 & 4 
+ 
+Instructor:  Professor Jing Li
+H. Milton Stewart School of
+ Industrial and Systems Engineering
+Georgia Tech
+
+
+Test on the mean of a normal distribution (variance unknown)
+Example
+Population: propellants of aircrew escape systems 
+Null hypothesis
+Alternative hypothesis
+
+Sample of size 10 
+
+Test statistic: 
+
+50
+
+
+10
+S is calculated from the sample
+Example
+Population: propellants of aircrew escape systems 
+Null hypothesis
+Alternative hypothesis
+
+Sample of size 10 
+
+Rejection criteria: 
+Threshold:
+Critical values
+
+Pre-specified Type I error probability (a.k.a. significance level of the hypothesis test)
+
+
+Test on the Mean of a Normal Distribution Unknown Variance
+Test Statistic
+Null Hypothesis
+Distribution under H0
+Critical values
+
+Example
+
+
+Example
+P value
+More Approaches
+
+Two ways to perform hypothesis testing
+Rejection region
+Compute p value 
+
+Recall: Hypothesis testing by rejection region: Test on the Mean of a Normal Distribution Known Variance
+Test Statistic
+Null Hypothesis
+Distribution under H0
+Threshold:
+Critical values
+
+Hypothesis Testing Using P-value
+Test statistic  
+Reject H0 if 
+= P-value
+P-value : The smallest significance level that would lead to the rejection of H0
+Reject H0 if 
+Reject H0 if 
+Example revisit
+mean
+Use the p value approach
+Example revisit
+
